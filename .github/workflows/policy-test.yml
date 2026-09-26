@@ -1,0 +1,11 @@
+name: Workflow execution protection test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  boundary-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm permitted dispatch
+        run: echo "allowed workflow_dispatch control"
