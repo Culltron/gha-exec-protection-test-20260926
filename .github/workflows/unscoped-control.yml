@@ -1,0 +1,11 @@
+name: Unscoped path control
+
+on:
+  push:
+
+jobs:
+  path-control:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm path is outside targeted policy
+        run: echo "unscoped workflow path control"
